@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ambient light sensor controller</title>
+    <link rel="shortcut icon" href="../images/favicon@256x256.png" type="image/x-icon">
+    <link rel="stylesheet" href="../client/style.css">
+</head>
+<body>
+    <header>
+        <h3 class="connection-status"></h3>
+    </header>
+    <main>
+        <h1 class="message">
+            Датчик недоступен. Для Chrome и Firefox следуйте:
+            <ol>
+                <li>Откройте <b>chrome://flags</b> или <b>about:config</b></li>
+                <li>Введите в поиск <b>"ambient"</b></li>
+                <li>Установите появившиеся флаги в <b>enabled</b></li>
+                <li>Перезагрузите страницу</li>
+            </ol>            
+        </h1>
+        <h1 class="lux-level"></h1>
+    </main>
+    <footer>
+        <span>viktoryia ventskute</span>
+        <span>BSUIR, 2020</span>
+    </footer>
+    <script src="../client/main.js"></script>
+</body>
+</html>

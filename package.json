@@ -1,0 +1,39 @@
+{
+  "name": "viktoryia-ventskutse-coursework",
+  "author": {
+    "name": "Viktoryia Ventskutse",
+    "email": "ventskute.vika@gmail.com"
+  },
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron-webpack dev",
+    "compile": "electron-webpack",
+    "build": "npm run compile && electron-builder",
+    "build:dir": "npm run build --dir -c.compression=store -c.mac.identity=null",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
+    "source-map-support": "^0.5.16"
+  },
+  "devDependencies": {
+    "electron": "8.5.2",
+    "electron-builder": "^22.4.1",
+    "electron-webpack": "^2.8.2",
+    "webpack": "~4.42.1",
+    "websocket": "^1.0.31"
+  },
+  "electronWebpack": {
+    "commonSourceDirectory": "src/common",
+    "staticSourceDirectory": "src/static",
+    "title": true,
+    "main": {
+      "sourceDirectory": "src/main"
+    },
+    "renderer": {
+      "sourceDirectory": "src/renderer"
+    }
+  }
+}
