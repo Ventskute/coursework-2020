@@ -5,7 +5,7 @@ export default (e) => {
         detail: e.detail
     }))
 
-    document.dispatchEvent(new CustomEvent('format rgb', {
+    document.dispatchEvent(new CustomEvent('format xyz to lab', {
         detail: vars.agentData
     }))
 }
